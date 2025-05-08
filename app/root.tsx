@@ -31,6 +31,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<Meta />
 				<Links />
+				<script
+					defer
+					src="https://umami.phtiana.com/script.js"
+					data-website-id="c17ade98-7588-4e9a-a003-4ea74957d9a5"
+				/>
 			</head>
 			<body>
 				{children}

@@ -196,7 +196,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 						</div>
 						{isRunning && (
 							<p className="mt-2 text-sm opacity-90">
-								Ticking since {new Date(startTime || 0).toLocaleTimeString()}
+								Now: {new Date().toLocaleTimeString()}
 							</p>
 						)}
 					</div>
