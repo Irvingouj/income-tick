@@ -6,6 +6,8 @@
 		"build": "react-router build",
 		"db:generate": "dotenv -- drizzle-kit generate",
 		"db:migrate": "dotenv -- drizzle-kit migrate",
+		"db:migrate:production": "dotenv -e .env.prod -- node -e \"console.log('Using production DATABASE_URL:', process.env.DATABASE_URL)\" && dotenv -e .env.prod -- drizzle-kit migrate",
+		"check:prod-db": "dotenv -e .env.prod -- node -e \"console.log('Using production DATABASE_URL:', process.env.DATABASE_URL)\"",
 		"dev": "dotenv -- node server.js",
 		"start": "node server.js",
 		"check": "biome check",
