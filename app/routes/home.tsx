@@ -189,7 +189,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 						className="bg-gradient-to-r from-primary to-secondary rounded-lg p-6 mb-8 text-center shadow-lg text-white"
 					>
 						<h2 className="text-lg font-medium mb-2">
-							Earned So since {new Date(startTime || 0).toLocaleString()}
+							Earned since {new Date(startTime || 0).toLocaleString()}
 						</h2>
 						<div className="text-4xl font-bold tracking-tight drop-shadow-sm">
 							{formatCurrency(earned)}
