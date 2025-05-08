@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import type { Route } from "./+types/home";
 import RichPerson from "../components/RichPerson";
+import type { Route } from "./+types/home";
 
 // Custom hooks
 function useLocalStorageState<T>(

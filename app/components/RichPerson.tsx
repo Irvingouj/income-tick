@@ -66,9 +66,7 @@ export default function RichPerson({
 				<div
 					className={`bg-gradient-to-r from-primary to-secondary rounded-lg p-4 mb-4 text-center shadow-lg text-white transition-transform duration-300 ${isAnimating ? "scale-[1.02]" : ""}`}
 				>
-					<h4 className="text-lg font-medium mb-1">
-						Earned Since You Started
-					</h4>
+					<h4 className="text-lg font-medium mb-1">Earned Since You Started</h4>
 					<div className="text-3xl font-bold tracking-tight drop-shadow-sm">
 						{formatCurrency(earned)}
 					</div>
