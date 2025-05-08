@@ -3,11 +3,26 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Blue A 503 as primary, Red A 805 as secondary, White A 665 as background */
+  --color-primary: #0044FF; /* Blue A 503 */
+  --color-secondary: #FF3B30; /* Red A 805 */
+  --color-background: #F9F9F9; /* Light shade close to White A 665 */
+  --color-foreground: #FFFFFF; /* Pure white */
+  --color-foreground-secondary: #F0F0F0;
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-border: #E0E0E0;
+  --color-input-background: #FFFFFF;
+  --color-button-primary: var(--color-primary);
+  --color-button-secondary: #EAEAEA;
 }
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-background text-text-primary;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
